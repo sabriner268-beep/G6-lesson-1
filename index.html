@@ -46,7 +46,7 @@
     <div class="teacher-watermark">مس صابرين • Ms. Sabreen</div>
     <div class="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-amber-400 via-pink-400 to-sky-400 z-10"></div>
 
-    <!-- شاشة إغلاق الكويز التلقائية (تظهر إذا كُتب CLOSED في الشيت) -->
+    <!-- شاشة إغلاق الكويز التلقائية -->
     <div id="closed-screen" class="hidden space-y-6 text-center py-6 relative z-10">
       <div class="w-40 h-40 mx-auto rounded-full border-4 border-rose-300 shadow-xl overflow-hidden bg-rose-50">
         <img src="https://i.postimg.cc/DzH5SBDF/swrty-krtwn.png" class="w-full h-full object-cover object-top" alt="مس صابرين">
@@ -85,7 +85,7 @@
 
         <div>
           <label for="student-grade" class="block text-sm font-extrabold text-slate-700 mb-1">Enter your class & grade / أدخل الصف أو الفصل: <span class="text-rose-500">*</span></label>
-          <input type="text" id="student-grade" placeholder="مثال: سادس أول (6/1)، Grade 6A..." class="w-full px-4 py-3 rounded-2xl bg-slate-50 border-2 border-slate-200 text-slate-800 text-sm sm:text-base font-bold shadow-inner focus:outline-none focus:border-indigo-500" />
+          <input type="text" id="student-grade" placeholder="مثال: خامس أول (5/1)، Grade 5A..." class="w-full px-4 py-3 rounded-2xl bg-slate-50 border-2 border-slate-200 text-slate-800 text-sm sm:text-base font-bold shadow-inner focus:outline-none focus:border-indigo-500" />
         </div>
 
         <p id="input-error" class="hidden text-xs text-rose-500 font-bold text-center">يرجى كتابة اسمك والصف أولاً للبدء!</p>
@@ -288,9 +288,9 @@
         type: "mcq",
         question: "8. ……… is a device that connects a local area network (LAN) to the internet.",
         options: [
-          { text: "Modem", isCorrect: false },
+          { text: "Modem", isCorrect: true },
           { text: "Laptop", isCorrect: false },
-          { text: "Router", isCorrect: true },
+          { text: "Router", isCorrect: false },
           { text: "Server", isCorrect: false }
         ]
       },
